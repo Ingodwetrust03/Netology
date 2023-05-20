@@ -63,9 +63,6 @@ export default function  Portfolio () {
 
 
     const handleClick = (e) => {
-        let notActiveBlocks = [...document.querySelectorAll(".Toolbar div")]
-        notActiveBlocks.map(item => item.classList.remove("active"))
-        e.target.classList.add("active")
         let filterName = e.target.innerText
         getSelected(filterName)
 
